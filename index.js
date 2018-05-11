@@ -9,7 +9,7 @@ const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 
 //webhook
-app.post('/webhook', function(req, res) {
+app.get('/webhook', function(req, res) {
 	console.log('received a post request');
 	if (!req.body) return res.sendStatus(400)
 	res.setHeader('Content-Type', 'application/json');
