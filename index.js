@@ -28,9 +28,9 @@ app.post('/webhook', function(req, res) {
 	console.log('Here is the response to dialogflow');
 	console.log(responseObj);
 	return res.json(responseObj);
-})
+});
 
-var result
+var result="";
 
 function cb(err, response, body) {
 	if(err){
