@@ -38,6 +38,6 @@ restService.post("/echo", function(req, res) {
     source: "webhook-echo-sample"
   });
 });
-restService.listen(process.env.PORT || 3000), function() {
-  console.log('server up and listening');
+restService.listen(process.env.PORT || 3000, function() {
+  console.log("Server up and listening");
 });
